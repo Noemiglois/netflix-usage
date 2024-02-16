@@ -32,6 +32,6 @@ Upon analyzing my viewing profile, it is evident that from the beginning of 2024
 Comparing profiles, it is observed that my parents have spent more time on the platform, particularly in February, indicating differences in usage patterns among different user groups.
 
 ## ¡Let's connect! 
-[![Lets Connect: Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/myprofile)
+[![](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/noemigonzalezlois)
 
 January 2024
