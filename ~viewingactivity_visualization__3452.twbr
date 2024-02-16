@@ -1,0 +1,2243 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.24.0112.1233                               -->
+<workbook original-version='18.1' source-build='2023.3.2 (20233.24.0112.1233)' source-platform='win' version='18.1' xml:base='https://eu-west-1a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='netflix' path='/t/noemidatascience/workbooks' revision='1.0' site='noemidatascience' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='viewingactivity (viewingactivity)' inline='true' name='federated.0e4bgu31c024d80zta8w40cf0uiz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='viewingactivity' name='excel-direct.0qgt4xh1fxdu4k15s7edn13e1ttt'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/Noemi/OneDrive/Escritorio/viewingactivity.xls' interpretationMode='1' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0qgt4xh1fxdu4k15s7edn13e1ttt' name='viewingactivity' table='[viewingactivity$]' type='table'>
+          <columns gridOrigin='A1:M5370:no:A1:M5370:1' header='yes' lost='0' outcome='1' processed='13961'>
+            <column datatype='string' name='user_profile' ordinal='0' />
+            <column datatype='date' name='start_time' ordinal='1' />
+            <column datatype='string' name='duration' ordinal='2' />
+            <column datatype='string' name='attributes' ordinal='3' />
+            <column datatype='string' name='video_type' ordinal='4' />
+            <column datatype='string' name='device' ordinal='5' />
+            <column datatype='string' name='bookmark' ordinal='6' />
+            <column datatype='string' name='latest_bookmark' ordinal='7' />
+            <column datatype='string' name='country' ordinal='8' />
+            <column datatype='string' name='season' ordinal='9' />
+            <column datatype='integer' name='episode' ordinal='10' />
+            <column datatype='string' name='title' ordinal='11' />
+            <column datatype='string' name='format' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0qgt4xh1fxdu4k15s7edn13e1ttt' name='viewingactivity' table='[viewingactivity$]' type='table'>
+          <columns gridOrigin='A1:M5370:no:A1:M5370:1' header='yes' lost='0' outcome='1' processed='13961'>
+            <column datatype='string' name='user_profile' ordinal='0' />
+            <column datatype='date' name='start_time' ordinal='1' />
+            <column datatype='string' name='duration' ordinal='2' />
+            <column datatype='string' name='attributes' ordinal='3' />
+            <column datatype='string' name='video_type' ordinal='4' />
+            <column datatype='string' name='device' ordinal='5' />
+            <column datatype='string' name='bookmark' ordinal='6' />
+            <column datatype='string' name='latest_bookmark' ordinal='7' />
+            <column datatype='string' name='country' ordinal='8' />
+            <column datatype='string' name='season' ordinal='9' />
+            <column datatype='integer' name='episode' ordinal='10' />
+            <column datatype='string' name='title' ordinal='11' />
+            <column datatype='string' name='format' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M5370:no:A1:M5370:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>13961</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_profile</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[user_profile]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>user_profile</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_time</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[start_time]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>start_time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attributes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[attributes]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>attributes</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[video_type]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>video_type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>device</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[device]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>device</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bookmark</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[bookmark]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>bookmark</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latest_bookmark</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[latest_bookmark]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>latest_bookmark</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>episode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[episode]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>episode</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>format</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[format]</local-name>
+            <parent-name>[viewingactivity]</parent-name>
+            <remote-alias>format</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LES_RES_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='duration_profile_minutes' datatype='real' name='[Calculation_1279022347011973123]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT(LEFT([duration], 2)) + (INT(MID([duration], 4, 2)))/60 + (INT(RIGHT([duration], 2)) / 3600)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='viewingactivity' datatype='table' name='[__tableau_internal_object_id__].[viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2]' role='measure' type='quantitative' />
+      <column caption='Attributes' datatype='string' name='[attributes]' role='dimension' type='nominal' />
+      <column caption='Bookmark' datatype='string' name='[bookmark]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Device' datatype='string' name='[device]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+      <column caption='Episode' datatype='integer' name='[episode]' role='dimension' type='ordinal' />
+      <column caption='Format' datatype='string' name='[format]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;film&quot;' value='Movie' />
+          <alias key='&quot;series&quot;' value='TV show' />
+        </aliases>
+      </column>
+      <column caption='Latest Bookmark' datatype='string' name='[latest_bookmark]' role='dimension' type='nominal' />
+      <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+      <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+          <alias key='&quot;Carmen&quot;' value='Sister' />
+          <alias key='&quot;Familia&quot;' value='Family' />
+          <alias key='&quot;Noemi&quot;' value='Me' />
+        </aliases>
+      </column>
+      <column caption='Video Type' datatype='string' name='[video_type]' role='dimension' type='nominal' />
+      <column-instance column='[start_time]' derivation='Day' name='[dy:start_time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[start_time]' derivation='Month' name='[mn:start_time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[format]' derivation='None' name='[none:format:nk]' pivot='key' type='nominal' />
+      <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+      <column-instance column='[start_time]' derivation='Weekday' name='[wd:start_time:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[start_time]' derivation='Week' name='[wk:start_time:ok]' pivot='key' type='ordinal' />
+      <group caption='Acción (DÍA(Start Time),SEMANA(Start Time),DÍA DE SEMANA(Start Time))' hidden='true' name='[Action (DAY(Start Time),WEEK(Start Time),WEEKDAY(Start Time))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[dy:start_time:ok]' />
+          <groupfilter function='level-members' level='[wk:start_time:ok]' />
+          <groupfilter function='level-members' level='[wd:start_time:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (MES(Start Time),User Profile)' hidden='true' name='[Action (MONTH(Start Time),User Profile)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:start_time:ok]' />
+          <groupfilter function='level-members' level='[user_profile]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (User Profile)' hidden='true' name='[Action (User Profile)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[user_profile]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:user_profile:nk]' palette='red_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;Noemi&quot;</bucket>
+            </map>
+            <map to='#e33e43'>
+              <bucket>&quot;Familia&quot;</bucket>
+            </map>
+            <map to='#f8826b'>
+              <bucket>&quot;Carmen&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;Angeles y Lino&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:format:nk]' palette='red_10_0' type='palette'>
+            <map to='#d3293d'>
+              <bucket>&quot;film&quot;</bucket>
+            </map>
+            <map to='#fca290'>
+              <bucket>&quot;series&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='viewingactivity' id='viewingactivity_62F0CC38A7894BA6BFAA717D67942EA2'>
+            <properties context=''>
+              <relation connection='excel-direct.0qgt4xh1fxdu4k15s7edn13e1ttt' name='viewingactivity' table='[viewingactivity$]' type='table'>
+                <columns gridOrigin='A1:M5370:no:A1:M5370:1' header='yes' lost='0' outcome='1' processed='13961'>
+                  <column datatype='string' name='user_profile' ordinal='0' />
+                  <column datatype='date' name='start_time' ordinal='1' />
+                  <column datatype='string' name='duration' ordinal='2' />
+                  <column datatype='string' name='attributes' ordinal='3' />
+                  <column datatype='string' name='video_type' ordinal='4' />
+                  <column datatype='string' name='device' ordinal='5' />
+                  <column datatype='string' name='bookmark' ordinal='6' />
+                  <column datatype='string' name='latest_bookmark' ordinal='7' />
+                  <column datatype='string' name='country' ordinal='8' />
+                  <column datatype='string' name='season' ordinal='9' />
+                  <column datatype='integer' name='episode' ordinal='10' />
+                  <column datatype='string' name='title' ordinal='11' />
+                  <column datatype='string' name='format' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Resaltado 1 (generado)' name='[Action1_260267E9BE3A411BB3BA306812CC49C1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='NetflixUsage' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='NetflixUsage' />
+      </command>
+    </action>
+    <action caption='Filtro 2 (generado)' name='[Action3_171012A9CC34485099B1AF9095FAE3A3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='NetflixUsage' type='sheet' worksheet='Histogram' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='NetflixUsage' />
+      </command>
+    </action>
+    <action caption='Filtro 3 (generado)' name='[Action4_621174F5D3CC4F5B9E596BA92DF9B42B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='NetflixUsage' type='sheet' worksheet='HistMonth' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='NetflixUsage' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Calendar'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#aa0000' fontsize='14'>Daily usage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column caption='duration_profile_minutes' datatype='real' name='[Calculation_1279022347011973123]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(LEFT([duration], 2)) + (INT(MID([duration], 4, 2)))/60 + (INT(RIGHT([duration], 2)) / 3600)' />
+            </column>
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column-instance column='[start_time]' derivation='Day' name='[dy:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[start_time]' derivation='Month' name='[mn:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1279022347011973123]' derivation='Sum' name='[sum:Calculation_1279022347011973123:qk]' pivot='key' type='quantitative' />
+            <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+                <alias key='&quot;Carmen&quot;' value='Sister' />
+                <alias key='&quot;Familia&quot;' value='Family' />
+                <alias key='&quot;Noemi&quot;' value='Me' />
+              </aliases>
+            </column>
+            <column-instance column='[start_time]' derivation='Weekday' name='[wd:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[start_time]' derivation='Week' name='[wk:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]'>
+            <groupfilter function='member' level='[mn:start_time:ok]' member='11' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' filter-group='5'>
+            <groupfilter function='member' level='[none:user_profile:nk]' member='&quot;Noemi&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' filter-group='3'>
+            <groupfilter function='member' level='[yr:start_time:ok]' member='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[wk:start_time:ok]' value='false' />
+            <format attr='text-format' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[wd:start_time:ok]' value='ieee' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' value='Select a year'>
+              <formatted-text>
+                <run>Select a year</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]' value='Select month:'>
+              <formatted-text>
+                <run>Select month:</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[dy:start_time:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#aa0000'>Weekday:</run>
+                <run fontcolor='#aa0000'><![CDATA[	 <[federated.0e4bgu31c024d80zta8w40cf0uiz].[wd:start_time:ok]> <[federated.0e4bgu31c024d80zta8w40cf0uiz].[dy:start_time:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#aa0000'>Usage (hours):&#9;</run>
+                <run fontcolor='#aa0000'><![CDATA[<[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e4bgu31c024d80zta8w40cf0uiz].[wk:start_time:ok]</rows>
+        <cols>[federated.0e4bgu31c024d80zta8w40cf0uiz].[wd:start_time:ok]</cols>
+      </table>
+      <simple-id uuid='{1A8E8D41-A188-4948-B3A4-F170519D6329}' />
+    </worksheet>
+    <worksheet name='Calendar_good'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#aa0000' fontname='Tableau Book' fontsize='14'>Daily usage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column caption='duration_profile_minutes' datatype='real' name='[Calculation_1279022347011973123]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(LEFT([duration], 2)) + (INT(MID([duration], 4, 2)))/60 + (INT(RIGHT([duration], 2)) / 3600)' />
+            </column>
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column-instance column='[start_time]' derivation='Day' name='[dy:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[start_time]' derivation='Month' name='[mn:start_time:ok]' pivot='key' type='ordinal' />
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1279022347011973123]' derivation='Sum' name='[sum:Calculation_1279022347011973123:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_time]' derivation='Weekday' name='[wd:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[start_time]' derivation='Week' name='[wk:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]'>
+            <groupfilter function='member' level='[mn:start_time:ok]' member='10' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]'>
+            <groupfilter function='member' level='[yr:start_time:ok]' member='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[wk:start_time:ok]' value='false' />
+            <format attr='text-format' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[wd:start_time:ok]' value='ieeeee' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' value='Select a year' />
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]' value='Select month:' />
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[wd:start_time:ok]' value='Select a year' />
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[wk:start_time:ok]' value='Select a year' />
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[dy:start_time:ok]' value='Select a year' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[dy:start_time:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#aa0000'>Weekday: </run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[wd:start_time:ok]> <[federated.0e4bgu31c024d80zta8w40cf0uiz].[dy:start_time:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#aa0000'>Usage (hours):&#9;</run>
+                <run fontcolor='#aa0000'><![CDATA[<[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e4bgu31c024d80zta8w40cf0uiz].[wk:start_time:ok]</rows>
+        <cols>[federated.0e4bgu31c024d80zta8w40cf0uiz].[wd:start_time:ok]</cols>
+      </table>
+      <simple-id uuid='{B3411FB3-618C-404A-BF24-C3353BFA0BBF}' />
+    </worksheet>
+    <worksheet name='Circulos'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#aa0000' fontname='Tableau Book' fontsize='14'>Movie and TV Show distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Format' datatype='string' name='[format]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;film&quot;' value='Movie' />
+                <alias key='&quot;series&quot;' value='TV show' />
+              </aliases>
+            </column>
+            <column-instance column='[format]' derivation='None' name='[none:format:nk]' pivot='key' type='nominal' />
+            <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='CountD' name='[pcto:ctd:title:qk:4]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[format]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+                <alias key='&quot;Carmen&quot;' value='Sister' />
+                <alias key='&quot;Familia&quot;' value='Family' />
+                <alias key='&quot;Noemi&quot;' value='Me' />
+              </aliases>
+            </column>
+            <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' filter-group='5'>
+            <groupfilter function='member' level='[none:user_profile:nk]' member='&quot;Noemi&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' filter-group='3'>
+            <groupfilter function='member' level='[yr:start_time:ok]' member='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' value='Select year:'>
+              <formatted-text>
+                <run fontcolor='#ffffff'>Select year:</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:format:nk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[ctd:title:qk]' />
+              <size column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[ctd:title:qk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[pcto:ctd:title:qk:4]' />
+              <color column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:format:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#aa0000'>Format:&#9;</run>
+                <run fontcolor='#aa0000'><![CDATA[<[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:format:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#aa0000'>Frecuency:&#9;</run>
+                <run fontcolor='#aa0000'><![CDATA[<[federated.0e4bgu31c024d80zta8w40cf0uiz].[ctd:title:qk]> (<[federated.0e4bgu31c024d80zta8w40cf0uiz].[pcto:ctd:title:qk:4]>)]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9B64D9D1-D5DF-4F30-8E4E-927E9AC26CC4}' />
+    </worksheet>
+    <worksheet name='CuadrosYearly'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#aa0000' fontname='Tableau Book' fontsize='14'>Yearly usage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column caption='duration_profile_minutes' datatype='real' name='[Calculation_1279022347011973123]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(LEFT([duration], 2)) + (INT(MID([duration], 4, 2)))/60 + (INT(RIGHT([duration], 2)) / 3600)' />
+            </column>
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1279022347011973123]' derivation='Sum' name='[sum:Calculation_1279022347011973123:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_time]' derivation='Year-Trunc' name='[tyr:start_time:ok]' pivot='key' type='ordinal' />
+            <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+                <alias key='&quot;Carmen&quot;' value='Sister' />
+                <alias key='&quot;Familia&quot;' value='Family' />
+                <alias key='&quot;Noemi&quot;' value='Me' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[Action (User Profile)]'>
+            <groupfilter function='level-members' level='[user_profile]' user:ui-action-filter='[Action3_171012A9CC34485099B1AF9095FAE3A3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' filter-group='5'>
+            <groupfilter function='member' level='[none:user_profile:nk]' member='&quot;Noemi&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[Action (User Profile)]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='center' />
+            <format attr='text-align' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='left' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' num-steps='30' palette='red_black_white_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='in-tooltip' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='Selecciona uno o varios perfiles' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' />
+              <color column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[tyr:start_time:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#aa0000'>Year:</run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[tyr:start_time:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#aa0000'>Usage (hours):</run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{12656869-FADF-4BB4-A644-B877A219BA09}' />
+    </worksheet>
+    <worksheet name='Daily usage'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='14'>Daily usage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column caption='duration_profile_minutes' datatype='real' name='[Calculation_1279022347011973123]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(LEFT([duration], 2)) + (INT(MID([duration], 4, 2)))/60 + (INT(RIGHT([duration], 2)) / 3600)' />
+            </column>
+            <column-instance column='[Calculation_1279022347011973123]' derivation='Avg' name='[avg:Calculation_1279022347011973123:qk]' pivot='key' type='quantitative' />
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+                <alias key='&quot;Carmen&quot;' value='Sister' />
+                <alias key='&quot;Familia&quot;' value='Family' />
+                <alias key='&quot;Noemi&quot;' value='Me' />
+              </aliases>
+            </column>
+            <column-instance column='[start_time]' derivation='Weekday' name='[wd:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' filter-group='5'>
+            <groupfilter function='member' level='[none:user_profile:nk]' member='&quot;Noemi&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' filter-group='3'>
+            <groupfilter function='member' level='[yr:start_time:ok]' member='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[avg:Calculation_1279022347011973123:qk]' num-steps='7' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[avg:Calculation_1279022347011973123:qk]' />
+              <size column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[avg:Calculation_1279022347011973123:qk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[wd:start_time:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#aa0000'>Weekday:</run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[wd:start_time:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#aa0000'>Avg usage (hours):&#9;</run>
+                <run fontcolor='#aa0000'><![CDATA[<[federated.0e4bgu31c024d80zta8w40cf0uiz].[avg:Calculation_1279022347011973123:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9ED4C600-8B60-41FF-AD24-F5CE6C2401AC}' />
+    </worksheet>
+    <worksheet name='Format'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#aa0000' fontname='Tableau Book' fontsize='14'>Total movies and TV shows by year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column-instance column='[title]' derivation='CountD' name='[ctd:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Format' datatype='string' name='[format]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;film&quot;' value='Movie' />
+                <alias key='&quot;series&quot;' value='TV show' />
+              </aliases>
+            </column>
+            <column-instance column='[format]' derivation='None' name='[none:format:nk]' pivot='key' type='nominal' />
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column-instance column='[start_time]' derivation='Year-Trunc' name='[tyr:start_time:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:format:nk]'>
+            <groupfilter function='level-members' level='[none:format:nk]' />
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]'>
+            <groupfilter from='2020' function='range' level='[yr:start_time:ok]' to='2024' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:format:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[ctd:title:qk]' scope='rows' value='Frequency' />
+            <format attr='title' class='0' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[tyr:start_time:qk]' scope='cols' value='Year' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#ffffff' />
+            <format attr='color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:format:nk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:format:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#aa0000'>Format:</run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:format:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#aa0000'>Year:</run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[tyr:start_time:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#aa0000'>Frequency:</run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[ctd:title:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e4bgu31c024d80zta8w40cf0uiz].[ctd:title:qk]</rows>
+        <cols>[federated.0e4bgu31c024d80zta8w40cf0uiz].[tyr:start_time:qk]</cols>
+      </table>
+      <simple-id uuid='{4569321D-DE9B-4729-A1E2-E5575801D453}' />
+    </worksheet>
+    <worksheet name='HistMonth'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#aa0000' fontname='Tableau Book' fontsize='14'>Monthly usage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column caption='duration_profile_minutes' datatype='real' name='[Calculation_1279022347011973123]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(LEFT([duration], 2)) + (INT(MID([duration], 4, 2)))/60 + (INT(RIGHT([duration], 2)) / 3600)' />
+            </column>
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column-instance column='[start_time]' derivation='Month' name='[mn:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1279022347011973123]' derivation='Sum' name='[sum:Calculation_1279022347011973123:qk]' pivot='key' type='quantitative' />
+            <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+                <alias key='&quot;Carmen&quot;' value='Sister' />
+                <alias key='&quot;Familia&quot;' value='Family' />
+                <alias key='&quot;Noemi&quot;' value='Me' />
+              </aliases>
+            </column>
+            <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' filter-group='5'>
+            <groupfilter function='member' level='[none:user_profile:nk]' member='&quot;Noemi&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' filter-group='3'>
+            <groupfilter function='member' level='[yr:start_time:ok]' member='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='title' class='0' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' scope='rows' value='hours' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]' value='iLLL' />
+            <format attr='vertical-align' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='center' />
+            <format attr='text-align' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='left' />
+            <format attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='#ffffff' />
+            <format attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]' value='#ffffff' />
+            <format attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' value='#ffffff' />
+            <format attr='background-color' data-class='total' value='#ffffff' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#ffffff' />
+            <format attr='background-color' data-class='total' scope='rows' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='Select a profile user:'>
+              <formatted-text>
+                <run fontcolor='#ffffff'>Select a profile user:</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#aa0000'>Month:</run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#aa0000'>Usage (hours):&#9;</run>
+                <run fontcolor='#aa0000'><![CDATA[<[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='cell' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]</rows>
+        <cols>[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]</cols>
+      </table>
+      <simple-id uuid='{346DD50E-E1A6-4463-83B7-BA75270E4D32}' />
+    </worksheet>
+    <worksheet name='HistMonthAccount'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='14'>Monthly usage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column caption='duration_profile_minutes' datatype='real' name='[Calculation_1279022347011973123]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(LEFT([duration], 2)) + (INT(MID([duration], 4, 2)))/60 + (INT(RIGHT([duration], 2)) / 3600)' />
+            </column>
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column-instance column='[start_time]' derivation='Month' name='[mn:start_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1279022347011973123]' derivation='Sum' name='[sum:Calculation_1279022347011973123:qk]' pivot='key' type='quantitative' />
+            <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+                <alias key='&quot;Carmen&quot;' value='Sister' />
+                <alias key='&quot;Familia&quot;' value='Family' />
+                <alias key='&quot;Noemi&quot;' value='Me' />
+              </aliases>
+            </column>
+            <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' filter-group='3'>
+            <groupfilter function='member' level='[yr:start_time:ok]' member='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' scope='rows' value='hours' />
+            <format attr='display' class='0' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' scope='rows' value='true' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]' value='iLLL' />
+            <format attr='vertical-align' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='center' />
+            <format attr='text-align' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='left' />
+            <format attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='#ffffff' />
+            <format attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]' value='#ffffff' />
+            <format attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' value='#ffffff' />
+            <format attr='background-color' data-class='total' value='#ffffff' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#ffffff' />
+            <format attr='background-color' data-class='total' scope='rows' value='#d4d4d4' />
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='Selecciona uno o varios perfiles' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#aa0000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true'>Month:</run>
+                <run><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]>
+]]></run>
+                <run bold='true'>Profile:&#9;</run>
+                <run><![CDATA[<[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]>
+]]></run>
+                <run bold='true'>Usage:</run>
+                <run><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-scope' value='cell' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]</rows>
+        <cols>[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]</cols>
+      </table>
+      <simple-id uuid='{05A7465F-850B-4583-9D6A-407554FEA5FA}' />
+    </worksheet>
+    <worksheet name='Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#aa0000' fontsize='14'>Yearly usage</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column caption='duration_profile_minutes' datatype='real' name='[Calculation_1279022347011973123]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(LEFT([duration], 2)) + (INT(MID([duration], 4, 2)))/60 + (INT(RIGHT([duration], 2)) / 3600)' />
+            </column>
+            <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+            <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1279022347011973123]' derivation='Sum' name='[sum:Calculation_1279022347011973123:qk]' pivot='key' type='quantitative' />
+            <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+                <alias key='&quot;Carmen&quot;' value='Sister' />
+                <alias key='&quot;Familia&quot;' value='Family' />
+                <alias key='&quot;Noemi&quot;' value='Me' />
+              </aliases>
+            </column>
+            <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' filter-group='3'>
+            <groupfilter function='member' level='[yr:start_time:ok]' member='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' scope='rows' value='minutes' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]' value='#ffffff' />
+            <format attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run bold='true' fontcolor='#aa0000'>Profile:</run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#aa0000'>Usage (hours):</run>
+                <run fontcolor='#aa0000'><![CDATA[	<[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#aa0000' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0e4bgu31c024d80zta8w40cf0uiz].[sum:Calculation_1279022347011973123:qk]</rows>
+        <cols>[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]</cols>
+      </table>
+      <simple-id uuid='{AF0E370B-9825-4DB0-97BB-3921F05679E4}' />
+    </worksheet>
+    <worksheet name='Wordcloud'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#aa0000' fontname='Tableau Book' fontsize='14'>Movies and TV Shows seen by (profile, year)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+            <column-instance column='[title]' derivation='Count' name='[cnt:title:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+            <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+                <alias key='&quot;Carmen&quot;' value='Sister' />
+                <alias key='&quot;Familia&quot;' value='Family' />
+                <alias key='&quot;Noemi&quot;' value='Me' />
+              </aliases>
+            </column>
+            <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:title:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:title:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:title:nk]' member='&quot;100 dÃ­as para enamorarnos&quot;' />
+                <groupfilter function='member' level='[none:title:nk]' member='&quot;CarnÃ©s falsos&quot;' />
+                <groupfilter function='member' level='[none:title:nk]' member='&quot;Cinemagraph: GTA III - The Definitive Edition&quot;' />
+                <groupfilter function='member' level='[none:title:nk]' member='&quot;Guillermo del Toroâ€™s Pinocchio&quot;' />
+                <groupfilter function='member' level='[none:title:nk]' member='&quot;JÃ³venes altezas&quot;' />
+                <groupfilter function='member' level='[none:title:nk]' member='&quot;Major Grom_hook_01_16x9&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' filter-group='5'>
+            <groupfilter function='member' level='[none:user_profile:nk]' member='&quot;Noemi&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' filter-group='3'>
+            <groupfilter function='member' level='[yr:start_time:ok]' member='2023' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:title:nk]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]</column>
+            <column>[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[cnt:title:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[cnt:title:qk]' num-steps='5' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='in-tooltip' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:title:nk]' value='false' />
+            <format attr='in-tooltip' field='[federated.0e4bgu31c024d80zta8w40cf0uiz].[cnt:title:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <size column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[cnt:title:qk]' />
+              <color column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[cnt:title:qk]' />
+              <text column='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{55D98B70-4A40-4929-B88E-22C8697F17ED}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='NetflixUsage'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='color' value='#aa0000' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='color' value='#aa0000' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='color' value='#aa0000' />
+        </style-rule>
+      </style>
+      <size minheight='768' minwidth='1366' sizing-mode='range' />
+      <datasources>
+        <datasource caption='viewingactivity (viewingactivity)' name='federated.0e4bgu31c024d80zta8w40cf0uiz' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0e4bgu31c024d80zta8w40cf0uiz'>
+        <column-instance column='[user_profile]' derivation='None' name='[none:user_profile:nk]' pivot='key' type='nominal' />
+        <column caption='Start Time' datatype='date' name='[start_time]' role='dimension' type='ordinal' />
+        <column caption='User Profile' datatype='string' name='[user_profile]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;Angeles y Lino&quot;' value='Parents' />
+            <alias key='&quot;Carmen&quot;' value='Sister' />
+            <alias key='&quot;Familia&quot;' value='Family' />
+            <alias key='&quot;Noemi&quot;' value='Me' />
+          </aliases>
+        </column>
+        <column-instance column='[start_time]' derivation='Year' name='[yr:start_time:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='86368' id='16' param='horz' type-v2='layout-flow' w='34414' x='313' y='13118'>
+            <zone h='86368' id='13' param='vert' type-v2='layout-flow' w='34414' x='313' y='13118'>
+              <zone fixed-size='2' h='643' id='6' is-fixed='true' type-v2='empty' w='34414' x='313' y='13118'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#aa0000' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='true' h='3344' id='42' type-v2='text' w='34414' x='313' y='13761'>
+                <formatted-text>
+                  <run fontalignment='1' fontname='Tableau Bold' fontsize='16'>SELECTED PROFILE USAGE</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='362' h='23794' id='39' is-fixed='true' name='Circulos' w='34414' x='313' y='17105'>
+                <layout-cache type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='58587' id='50' name='Wordcloud' w='34414' x='313' y='40899'>
+                <layout-cache type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='86368' id='43' is-fixed='true' type-v2='layout-basic' w='25737' x='34727' y='13118'>
+            <zone h='57573' id='52' is-fixed='true' type-v2='layout-basic' w='25737' x='34727' y='13118'>
+              <zone h='3857' id='18' param='vert' type-v2='layout-flow' w='25737' x='34727' y='13118'>
+                <zone h='643' id='20' param='vert' type-v2='layout-flow' w='25737' x='34727' y='13118'>
+                  <zone fixed-size='2' h='643' id='27' is-fixed='true' type-v2='empty' w='25737' x='34727' y='13118'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                      <format attr='background-color' value='#aa0000' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='3214' id='51' param='horz' type-v2='layout-flow' w='25737' x='34727' y='13761' />
+              </zone>
+              <zone h='53716' id='64' is-fixed='true' type-v2='layout-basic' w='25737' x='34727' y='16975'>
+                <zone h='26474' id='53' param='vert' type-v2='layout-flow' w='25737' x='34727' y='16975'>
+                  <zone h='26474' id='25' name='HistMonth' w='25737' x='34727' y='16975'>
+                    <layout-cache minheight='214' type-h='scalable' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='27242' id='65' param='vert' type-v2='layout-flow' w='25737' x='34727' y='43449'>
+                  <zone h='27242' id='62' name='Daily usage' w='25737' x='34727' y='43449'>
+                    <layout-cache cell-count-h='1' non-cell-size-h='54' type-h='cell' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone h='28795' id='44' param='vert' type-v2='layout-flow' w='25737' x='34727' y='70691'>
+              <zone h='28795' id='28' name='CuadrosYearly' w='25737' x='34727' y='70691'>
+                <layout-cache cell-count-h='1' non-cell-size-h='54' type-h='cell' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='32792' id='29' param='vert' type-v2='layout-flow' w='39223' x='60464' y='66694'>
+            <zone fixed-size='728' h='32792' id='30' is-fixed='true' name='Format' w='39223' x='60464' y='66694'>
+              <layout-cache minheight='227' minwidth='178' type-h='scalable' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='12604' id='34' is-scaled='1' param='C:/Users/Noemi/OneDrive/Escritorio/Cursos/Tableau/netflix-report/netflix.jpeg' type-v2='bitmap' w='73105' x='26582' y='514'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone fixed-size='565' h='22821' id='21' is-fixed='true' name='Histogram' w='39223' x='60464' y='43873'>
+            <layout-cache cell-count-w='3' minheight='182' non-cell-size-w='78' type-h='scalable' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='30755' id='47' param='vert' type-v2='layout-flow' w='39223' x='60464' y='13118'>
+            <zone fixed-size='2' h='643' id='46' is-fixed='true' type-v2='empty' w='39223' x='60464' y='13118'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#aa0000' />
+              </zone-style>
+            </zone>
+            <zone h='3344' id='49' type-v2='text' w='39223' x='60464' y='13761'>
+              <formatted-text>
+                <run fontalignment='1' fontname='Tableau Bold' fontsize='16'>ALL USERS COMPARATIVE</run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='24646' id='41' name='HistMonthAccount' w='39223' x='60464' y='17105'>
+              <layout-cache cell-count-w='12' minheight='183' non-cell-size-w='67' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='2122' id='66' leg-item-layout='horz' name='HistMonthAccount' pane-specification-id='0' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' show-title='false' type-v2='color' w='39223' x='60464' y='41751'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone forceUpdate='true' h='2411' id='5' type-v2='text' w='26269' x='313' y='514'>
+            <formatted-text>
+              <run fontcolor='#666666' fontname='Tableau Bold' fontsize='14'>FILTERS</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='5137' id='26' mode='dropdown' name='HistMonth' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' type-v2='filter' w='26269' x='313' y='2925'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='5056' id='17' mode='dropdown' name='Circulos' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' type-v2='filter' values='database' w='26269' x='313' y='8062'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2250' minheight='2250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='74' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98794' id='73' param='vert' type-v2='layout-flow' w='99286' x='357' y='603'>
+                <zone forceUpdate='true' h='2408' id='5' type-v2='text' w='26248' x='357' y='603'>
+                  <formatted-text>
+                    <run fontcolor='#666666' fontname='Tableau Bold' fontsize='14'>FILTERS</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='88' h='12583' id='34' is-fixed='true' is-scaled='1' param='C:/Users/Noemi/OneDrive/Escritorio/Cursos/Tableau/netflix-report/netflix.jpeg' type-v2='bitmap' w='73038' x='26605' y='603'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3921' id='42' type-v2='text' w='34386' x='357' y='13940'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Tableau Bold' fontsize='16'>SELECTED PROFILE USAGE</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3921' id='49' type-v2='text' w='39187' x='60456' y='13940'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Tableau Bold' fontsize='16'>ALL USERS COMPARATIVE</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5128' id='26' mode='dropdown' name='HistMonth' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' type-v2='filter' w='26248' x='357' y='3011'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='195' h='26427' id='25' is-fixed='true' name='HistMonth' w='25713' x='34743' y='17037'>
+                  <layout-cache minheight='183' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5047' id='17' mode='dropdown' name='Circulos' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' type-v2='filter' values='database' w='26248' x='357' y='8139'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='206' h='27903' id='39' is-fixed='true' name='Circulos' w='34386' x='357' y='17861'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='173' h='23536' id='41' is-fixed='true' name='HistMonthAccount' w='39187' x='60456' y='17861'>
+                  <layout-cache cell-count-w='12' minheight='183' non-cell-size-w='67' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='2488' id='66' leg-item-layout='horz' name='HistMonthAccount' pane-specification-id='0' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' show-title='false' type-v2='color' w='39187' x='60456' y='41397'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='201' h='27191' id='62' is-fixed='true' name='Daily usage' w='25713' x='34743' y='43464'>
+                  <layout-cache cell-count-h='1' non-cell-size-h='54' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='167' h='22780' id='21' is-fixed='true' name='Histogram' w='39187' x='60456' y='43885'>
+                  <layout-cache cell-count-w='3' minheight='182' non-cell-size-w='78' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53633' id='50' is-fixed='true' name='Wordcloud' w='34386' x='357' y='45764'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='243' h='32732' id='30' is-fixed='true' name='Format' w='39187' x='60456' y='66665'>
+                  <layout-cache minheight='227' minwidth='178' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='212' h='28742' id='28' is-fixed='true' name='CuadrosYearly' w='25713' x='34743' y='70655'>
+                  <layout-cache cell-count-h='1' non-cell-size-h='54' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{81624860-3B2D-428A-8CA8-23A675B3AF9E}' />
+    </dashboard>
+  </dashboards>
+  <windows pres-mode='true' source-height='44'>
+    <window class='worksheet' name='Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C93AC1BC-C93A-40DD-9F50-65BC6970FAB9}' />
+    </window>
+    <window class='worksheet' name='Calendar'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='marks' />
+            <card type='filters' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card mode='dropdown' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[yr:start_time:ok]' type='filter' />
+            <card mode='dropdown' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[mn:start_time:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{20B6A3C5-7F5C-4FF7-B8DA-C7C65C2B8E2A}' />
+    </window>
+    <window class='worksheet' name='Calendar_good'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='marks' />
+            <card type='filters' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA5E12A6-5FC5-47FB-B3ED-6104F7F08B0D}' />
+    </window>
+    <window class='worksheet' name='HistMonth'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card mode='checkdropdown' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:user_profile:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BEB50B01-36A9-42B3-8E6E-C5E5C90A1488}' />
+    </window>
+    <window class='worksheet' name='CuadrosYearly'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D8ACF07B-EEC9-499A-B2E0-6690932BE89A}' />
+    </window>
+    <window class='worksheet' name='Format'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4AF05BFD-0730-4587-8477-0BAE3449198B}' />
+    </window>
+    <window class='worksheet' name='Circulos'>
+      <cards>
+        <edge name='left'>
+          <strip size='248'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[none:format:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EBA5A162-3961-418C-BB6E-1B2811547E0D}' />
+    </window>
+    <window class='worksheet' name='Daily usage'>
+      <cards>
+        <edge name='left'>
+          <strip size='248'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[avg:Calculation_1279022347011973123:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0B526809-3AE4-4848-945E-6CEDC9D9F57F}' />
+    </window>
+    <window class='worksheet' name='Wordcloud'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0e4bgu31c024d80zta8w40cf0uiz].[cnt:title:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0FA98772-A123-4978-BD3F-9E2475F977B4}' />
+    </window>
+    <window class='worksheet' name='HistMonthAccount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6459B182-7D4F-4C2B-BB2B-B27DCD5AECEB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='NetflixUsage'>
+      <viewpoints>
+        <viewpoint name='Circulos'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='CuadrosYearly'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Daily usage'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Format'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='HistMonth'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='HistMonthAccount'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Histogram'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Wordcloud'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='26' />
+      <simple-id uuid='{7D95B4E6-DCC2-4303-B263-F1BC0F1D5279}' />
+    </window>
+  </windows>
+</workbook>
